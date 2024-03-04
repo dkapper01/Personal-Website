@@ -55,8 +55,8 @@
     <script type="module" src="components/Chip.js"></script>
     <script type="module" src="components/Project.js"></script>
     <script>
-      // Your chips data
-      const chips = [
+      // Your cards data
+      const cards = [
         {
           name: "Email",
           description: "This is a detailed description of the component.", // corrected typo 'descripton' to 'description'
@@ -107,11 +107,11 @@
         // Add more objects as needed
       ];
 
-      // Function to dynamically create the components based on the chips data
+      // Function to dynamically create the components based on the cards data
       function createComponents() {
         const projects = document.getElementById("projects");
 
-        chips.forEach((chip) => {
+        cards.forEach((chip) => {
           // Create <project-card> element
           const myProjects = document.createElement("project-card");
           myProjects.setAttribute("name", chip.name);
