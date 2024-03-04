@@ -48,49 +48,66 @@
       </div>
 
       <div style="padding-top: 20px">
-        <my-chip
+        <custom-chip
           label="Email"
           color="#f4ff7a"
           href="https://example.com"
-        ></my-chip>
-        <my-chip
+        ></custom-chip>
+        <custom-chip
           label="Twitter"
           color="#f4ff7a"
           href="https://example.com"
-        ></my-chip>
-        <my-chip
+        ></custom-chip>
+        <custom-chip
           label="LinkedIn"
           color="#f4ff7a"
           href="https://example.com"
-        ></my-chip>
-        <my-chip
+        ></custom-chip>
+        <custom-chip
           label="About"
           color="#e7e7e7"
           href="https://example.com"
-        ></my-chip>
-        <my-chip
+        ></custom-chip>
+        <custom-chip
           label="Projects"
           color="#e7e7e7"
           href="https://example.com"
-        ></my-chip>
+        ></custom-chip>
       </div>
     </div>
 
     <div>
-      <!-- <my-container>
-        <p>This is a child element</p>
-        <p>This is another child element</p>
-      </my-container> -->
-      <my-container
+      <project-card
         description="This is a detailed description of the component."
         year="2024"
         url="https://example.com"
         name="MyComponent"
         number="1"
-        >test
-      </my-container>
+      >
+      </project-card>
     </div>
-    <script type="module" src="MyChip.js"></script>
+    <script type="module" src="Chip.js"></script>
     <script type="module" src="Project.js"></script>
+    <script>
+      const chips = [
+        {
+          name: "Email",
+          descripton: "This is a detailed description of the component.",
+          year: "2024",
+          url: "https://example.com",
+          number: "1",
+          tag: [
+            {
+              label: "Email",
+              color: "#f4ff7a",
+            },
+            {
+              label: "Twitter",
+              color: "#f4ff7a",
+            },
+          ],
+        },
+      ];
+    </script>
   </body>
 </html>

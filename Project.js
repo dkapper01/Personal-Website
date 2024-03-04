@@ -1,6 +1,6 @@
-import "./MyChip.js"; // Path to your MyChip component file
+import "./Chip.js"; // Path to your Chip component file
 
-export class MyContainer extends HTMLElement {
+export class ProjectCard extends HTMLElement {
   constructor() {
     super(); // Always call super() first in the constructor.
     this.attachShadow({ mode: "open" }); // Attach a shadow root to the element.
@@ -25,14 +25,15 @@ export class MyContainer extends HTMLElement {
           padding: 10px;
         }
       </style>
-      <div>
+      <div 
+       style="max-height: 275px;"
+      >
         <h2>${this.number}</h2>
+         <custom-chip label="Click me!" color="#FF5733"></custom-chip>
         <p>${this.name}</p>
-        <p>${this.description}</p>
         <p>Year: ${this.year}</p>
         <a href="${this.url}">More info</a>
-        <my-chip label="Click me!" color="#FF5733"></my-chip>
-
+        <p>${this.description}</p>
       </div>
     `;
   }
@@ -78,4 +79,4 @@ export class MyContainer extends HTMLElement {
   }
 }
 
-customElements.define("my-container", MyContainer);
+customElements.define("project-card", ProjectCard);
