@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Email",
+    "description": "This is a detailed description of the component.",
+    "year": "2024",
+    "url": "https://example.com",
+    "number": "1",
+    "tag": [
+      {
+        "label": "Email",
+        "color": "#f4ff7a"
+      },
+      {
+        "label": "Twitter",
+        "color": "#f4ff7a"
+      }
+    ]
+  },
+  {
+    "name": "LinkedIn",
+    "description": "This is a detailed description of the component.",
+    "year": "2024",
+    "url": "https://example.com",
+    "number": "2",
+    "tag": [
+      {
+        "label": "LinkedIn",
+        "color": "#f4ff7a"
+      },
+      {
+        "label": "About",
+        "color": "#e7e7e7"
+      }
+    ]
+  },
+  {
+    "name": "Projects",
+    "description": "This is a detailed description of the component.",
+    "year": "2024",
+    "url": "https://example.com",
+    "number": "3",
+    "tag": [
+      {
+        "label": "Projects",
+        "color": "#e7e7e7"
+      }
+    ]
+  }
+]
