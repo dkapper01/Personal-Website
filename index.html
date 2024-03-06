@@ -20,7 +20,7 @@
     </style>
   </head>
   <body>
-    <div style="max-width: 550px">
+    <div style="">
       <div style="padding-top: 20px">
         <h1 style="font-size: 60px; letter-spacing: -0.05em; font-weight: 900">
           Daniel Kapper
@@ -47,71 +47,26 @@
         </p>
       </div>
 
-      <div style="padding-top: 20px">
-        <div id="projects"></div>
+      <div style="display: flex">
+        <div style="display: flex" id="projects"></div>
       </div>
     </div>
 
     <script type="module" src="components/Chip.js"></script>
     <script type="module" src="components/Project.js"></script>
     <script>
-      // Your cards data
-      const cards = [
-        {
-          name: "Email",
-          description: "This is a detailed description of the component.", // corrected typo 'descripton' to 'description'
-          year: "2024",
-          url: "https://example.com",
-          number: "1",
-          tag: [
-            {
-              label: "Email",
-              color: "#f4ff7a",
-            },
-            {
-              label: "Twitter",
-              color: "#f4ff7a",
-            },
-          ],
-        },
-        {
-          name: "LinkedIn",
-          description: "This is a detailed description of the component.",
-          year: "2024",
-          url: "https://example.com",
-          number: "2",
-          tag: [
-            {
-              label: "LinkedIn",
-              color: "#f4ff7a",
-            },
-            {
-              label: "About",
-              color: "#e7e7e7",
-            },
-          ],
-        },
-        {
-          name: "Projects",
-          description: "This is a detailed description of the component.",
-          year: "2024",
-          url: "https://example.com",
-          number: "3",
-          tag: [
-            {
-              label: "Projects",
-              color: "#e7e7e7",
-            },
-          ],
-        },
-        // Add more objects as needed
-      ];
+      fetch("project.json")
+        .then((response) => response.json())
+        .then((data) => {
+          createComponents(data);
+        })
+        .catch((error) => console.error("Error:", error));
 
       // Function to dynamically create the components based on the cards data
-      function createComponents() {
+      function createComponents(data) {
         const projects = document.getElementById("projects");
 
-        cards.forEach((chip) => {
+        data.forEach((chip) => {
           // Create <project-card> element
           const myProjects = document.createElement("project-card");
           myProjects.setAttribute("name", chip.name);
@@ -132,9 +87,6 @@
           projects.appendChild(myProjects);
         });
       }
-
-      // Call the function to create and append components
-      createComponents();
     </script>
   </body>
 </html>
