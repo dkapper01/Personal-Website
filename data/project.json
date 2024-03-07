@@ -4,7 +4,7 @@
     "description": "This is a detailed description of the component.",
     "year": "2024",
     "url": "https://example.com",
-    "number": "1",
+    "number": "03",
     "tag": [
       {
         "label": "Email",
@@ -21,7 +21,7 @@
     "description": "This is a detailed description of the component.",
     "year": "2024",
     "url": "https://example.com",
-    "number": "2",
+    "number": "02",
     "tag": [
       {
         "label": "LinkedIn",
@@ -38,7 +38,7 @@
     "description": "This is a detailed description of the component.",
     "year": "2024",
     "url": "https://example.com",
-    "number": "3",
+    "number": "01",
     "tag": [
       {
         "label": "Projects",

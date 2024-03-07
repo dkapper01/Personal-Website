@@ -1,10 +1,19 @@
 import "./Chip.js"; // Path to your Chip component file
+// add project css file
 
 export class ProjectCard extends HTMLElement {
   constructor() {
     super(); // Always call super() first in the constructor.
     this.attachShadow({ mode: "open" }); // Attach a shadow root to the element.
     this.render();
+  }
+
+  async connectedCallback() {
+    const res = await fetch("./styles/project.css");
+    const text = await res.text();
+    const style = document.createElement("style");
+    style.textContent = text;
+    this.shadowRoot.appendChild(style);
   }
 
   static get observedAttributes() {
@@ -20,15 +29,18 @@ export class ProjectCard extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         :host {
-          display: block;
-          border: 1px solid #ccc;
-          padding: 10px;
+          // display: block;
+          // border: 1px solid #ccc;
+          // padding: 10px;
         }
+  
       </style>
+      <div style="max-height: 275px;" >
       <div 
-       style="max-height: 275px;"
+       class="test"
       >
         <h2>${this.number}</h2>
+      </div>
          <custom-chip label="Click me!" color="#FF5733"></custom-chip>
         <p>${this.name}</p>
         <p>Year: ${this.year}</p>
