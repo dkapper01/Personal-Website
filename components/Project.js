@@ -27,26 +27,34 @@ export class ProjectCard extends HTMLElement {
   render() {
     // Use attributes in the component's template
     this.shadowRoot.innerHTML = `
-      <style>
-        :host {
-          // display: block;
-          // border: 1px solid #ccc;
-          // padding: 10px;
-        }
-  
-      </style>
-      <div style="max-height: 275px;" >
-      <div 
-       class="test"
-      >
-        <h2>${this.number}</h2>
+    <style></style>
+    <div style="max-height: 275px;" >
+
+      <div class="card-section">
+        <h3 class="card-number">${this.number}</h3>
       </div>
-         <custom-chip label="Click me!" color="#FF5733"></custom-chip>
+
+      <div class="card-section">
+        <custom-chip label="Click me!" color="#FF5733"></custom-chip>
+      </div>
+      
+      <div class="card-section">
         <p>${this.name}</p>
+      </div>
+      
+      <div class="card-section">
         <p>Year: ${this.year}</p>
+      </div>
+
+      <div class="card-section">
         <a href="${this.url}">More info</a>
+      </div>
+
+      <div class="card-section">
         <p>${this.description}</p>
       </div>
+
+    </div>
     `;
   }
 
