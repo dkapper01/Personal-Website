@@ -1,5 +1,4 @@
 import "./Chip.js"; // Path to your Chip component file
-// add project css file
 
 export class ProjectCard extends HTMLElement {
   constructor() {
@@ -26,35 +25,30 @@ export class ProjectCard extends HTMLElement {
 
   render() {
     // Use attributes in the component's template
-    this.shadowRoot.innerHTML = `
-    <style></style>
-    <div style="max-height: 275px;" >
+    this.shadowRoot.innerHTML = `      
+      <div class="flex-item">
+         <div class="slot">
+           <h3 class="card-number">${this.number}</h3>
+         </div>
+         <div class="slot">
+          <custom-chip label="Fullstack" color="#FF5733"></custom-chip>
+         </div>
+          <div class="slot">
+           <p>${this.name}</p>
+         </div>
+         <div class="slot">
+           <p>${this.year}</p>
+         </div>
+         <div class="slot">
+           <p>${this.url}</p>
+         </div>
+          <div class="slot">
+           <p>${this.description}</p>
+         </div>
 
-      <div class="card-section">
-        <h3 class="card-number">${this.number}</h3>
-      </div>
-
-      <div class="card-section">
-        <custom-chip label="Click me!" color="#FF5733"></custom-chip>
-      </div>
-      
-      <div class="card-section">
-        <p>${this.name}</p>
-      </div>
-      
-      <div class="card-section">
-        <p>Year: ${this.year}</p>
-      </div>
-
-      <div class="card-section">
-        <a href="${this.url}">More info</a>
-      </div>
-
-      <div class="card-section">
-        <p>${this.description}</p>
+        </div>
       </div>
 
-    </div>
     `;
   }
 

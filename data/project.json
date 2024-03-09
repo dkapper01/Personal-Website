@@ -4,7 +4,7 @@
     "description": "This is a detailed description of the component.",
     "year": "2024",
     "url": "https://example.com",
-    "number": "03",
+    "number": "06",
     "tag": [
       {
         "label": "Email",
@@ -13,6 +13,57 @@
       {
         "label": "Twitter",
         "color": "#f4ff7a"
+      }
+    ]
+  },
+  {
+    "name": "LinkedIn",
+    "description": "This is a detailed description of the component.",
+    "year": "2024",
+    "url": "https://example.com",
+    "number": "05",
+    "tag": [
+      {
+        "label": "LinkedIn",
+        "color": "#f4ff7a"
+      },
+      {
+        "label": "About",
+        "color": "#e7e7e7"
+      }
+    ]
+  },
+  {
+    "name": "LinkedIn",
+    "description": "This is a detailed description of the component.",
+    "year": "2024",
+    "url": "https://example.com",
+    "number": "04",
+    "tag": [
+      {
+        "label": "LinkedIn",
+        "color": "#f4ff7a"
+      },
+      {
+        "label": "About",
+        "color": "#e7e7e7"
+      }
+    ]
+  },
+  {
+    "name": "LinkedIn",
+    "description": "This is a detailed description of the component.",
+    "year": "2024",
+    "url": "https://example.com",
+    "number": "03",
+    "tag": [
+      {
+        "label": "LinkedIn",
+        "color": "#f4ff7a"
+      },
+      {
+        "label": "About",
+        "color": "#e7e7e7"
       }
     ]
   },
