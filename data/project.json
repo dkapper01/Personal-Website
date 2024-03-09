@@ -2,8 +2,8 @@
   {
     "name": "Email",
     "description": "This is a detailed description of the component.",
-    "year": "2024",
-    "url": "https://example.com",
+    "year": "2023",
+    "url": "https://www.meetup.com/boston-code-and-coffee/",
     "number": "06",
     "tag": [
       {
@@ -19,8 +19,8 @@
   {
     "name": "LinkedIn",
     "description": "This is a detailed description of the component.",
-    "year": "2024",
-    "url": "https://example.com",
+    "year": "2022",
+    "url": "https://www.meetup.com/code-and-coffee-st-louis/",
     "number": "05",
     "tag": [
       {
@@ -36,8 +36,8 @@
   {
     "name": "LinkedIn",
     "description": "This is a detailed description of the component.",
-    "year": "2024",
-    "url": "https://example.com",
+    "year": "2020",
+    "url": "https://www.jamstack24.com/",
     "number": "04",
     "tag": [
       {
@@ -53,8 +53,8 @@
   {
     "name": "LinkedIn",
     "description": "This is a detailed description of the component.",
-    "year": "2024",
-    "url": "https://example.com",
+    "year": "2020",
+    "url": "https://microunicorn.io/",
     "number": "03",
     "tag": [
       {
@@ -70,8 +70,8 @@
   {
     "name": "LinkedIn",
     "description": "This is a detailed description of the component.",
-    "year": "2024",
-    "url": "https://example.com",
+    "year": "2018",
+    "url": "https://dkapper01.github.io/TitanHouseSearch",
     "number": "02",
     "tag": [
       {
@@ -87,8 +87,8 @@
   {
     "name": "Projects",
     "description": "This is a detailed description of the component.",
-    "year": "2024",
-    "url": "https://example.com",
+    "year": "2018",
+    "url": "https://github.com/dkapper01/researchapp",
     "number": "01",
     "tag": [
       {
